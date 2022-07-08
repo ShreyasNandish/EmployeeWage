@@ -19,11 +19,15 @@ public class EmployeeWage {
                 System.out.println("Employee is present Full time ");
                 int dailyWage = WAGE_PER_HOUR * FULL_DAY_HOUR;
                 System.out.println("Employee wage for a day is:" + dailyWage);
+                int monthlyWage=dailyWage*WORKING_DAY_PER_MONTH;
+                System.out.println("Monthly wage of the employee is :"+monthlyWage);
                 break;
             case IS_PART_TIME:
                 System.out.println("Employee is present Part time ");
                 dailyWage = WAGE_PER_HOUR * PART_DAY_HOUR;
                 System.out.println("Employee wage for a day is:" + dailyWage);
+                monthlyWage=dailyWage*WORKING_DAY_PER_MONTH;
+                System.out.println("Monthly wage of the employee is :"+monthlyWage);
                 break;
             default:
                 System.out.println("Employee is absent");
